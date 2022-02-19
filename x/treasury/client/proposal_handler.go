@@ -1,0 +1,13 @@
+package client
+
+import (
+	govclient "github.com/okxtuta/anatha-cli/x/governance/client"
+	"github.com/okxtuta/anatha-cli/x/treasury/client/cli"
+)
+
+var AddBuyBackLiquidityProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitAddBuyBackLiquidityProposal)
+var RemoveBuyBackLiquidityProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitRemoveBuyBackLiquidityProposal)
+var BurnDistributionProfitsProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitBurnDistributionProfitsProposal)
+var TransferFromDistributionProfitsToBuyBackLiquidityProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitTransferFromDistributionProfitsToBuyBackLiquidityProposal)
+var TransferFromTreasuryToSwapEscrowProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitTransferFromTreasuryToSwapEscrowProposal)
+var TransferFromSwapEscrowToBuyBackProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitTransferFromSwapEscrowToBuyBackProposal)
